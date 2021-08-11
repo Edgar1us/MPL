@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.HomeActivity">
+
+    <item android:id="@+id/action_cuenta"
+        android:title="@string/action_cuenta"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_cambiarClave"
+        android:title="@string/action_cambio"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_verTodas"
+        android:title="@string/todas"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_configuracion"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_mapa"
+        android:title="@string/action_mapa"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_retrofit"
+        android:title="@string/action_retrofit"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+
+    <item android:id="@+id/action_nuevo"
+        android:title="@string/action_nuevo"
+        android:icon="@android:drawable/ic_menu_add"
+        android:orderInCategory="3"
+        app:showAsAction="ifRoom|withText" />
+
+</menu>

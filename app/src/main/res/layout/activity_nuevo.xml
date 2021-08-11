@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.NuevoActivity">
+
+    <include android:id="@+id/appbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/txtvx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addMiLista"
+        android:layout_marginTop="20sp"
+        style="@style/TxtBienvenida.Cabecera.Secundaria"
+        app:layout_constraintBottom_toBottomOf="@+id/edtTitulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/appbar" />
+
+    <EditText
+        android:id="@+id/edtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/titulo"
+        android:layout_marginTop="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtvx"
+        app:layout_constraintVertical_bias="0.221" />
+
+    <EditText
+        android:id="@+id/edtDuracion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/duracion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/edtTitulo"
+        app:layout_constraintVertical_bias="0.235" />
+
+    <EditText
+        android:id="@+id/edtProta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Protagonista"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/edtDuracion"
+        app:layout_constraintVertical_bias="0.325" />
+
+    <Spinner
+        android:id="@+id/sValoracion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/edtProta"
+        app:layout_constraintVertical_bias="0.404" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add"
+        android:id="@+id/btnAdd"
+        style="@style/BotonesNormal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!--/*    private int imagen;
+    private String titulo;
+    private int duracion;
+    private String protagonista;
+    private int valoracion;
+    private Usuario usuario;*/-->
